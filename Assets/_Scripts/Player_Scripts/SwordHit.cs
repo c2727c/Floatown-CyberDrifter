@@ -11,6 +11,9 @@ public class SwordHit : MonoBehaviour//该脚本赋给玩家的剑
 
     public Transform stopT;
 
+    public SpawnPoint spawnPoint;   //to invoke function from SpawnPoint script
+    public GameObject player;   //to initialize the preSpawnPosition
+    public Vector3 preSpawnPosition;
 
 
     void Start()
@@ -18,6 +21,8 @@ public class SwordHit : MonoBehaviour//该脚本赋给玩家的剑
         m_ArrayMusic = GetComponents<AudioSource>();
         m_music1 = m_ArrayMusic[0];
         m_music2 = m_ArrayMusic[1];
+
+        preSpawnPosition = player.transform.position;
     }
     void Update()
     {
@@ -60,6 +65,21 @@ public class SwordHit : MonoBehaviour//该脚本赋给玩家的剑
             MovingPlatformEvents mpEvents = other.gameObject.GetComponent<MovingPlatformEvents>();
             mpEvents.RunTo(stopT);
 
+        }
+
+        if(other.gameObject.CompareTag("SpawnPoint"))
+        {
+            Debug.Log("OnTriggerEnter--isSpawnPoint");
+            other.gameObject.SetActive(false);
+            //更新preSpawnPosition
+            preSpawnPosition = other.gameObject.transform.position;
+            Debug.Log("The spawn position is " + preSpawnPosition);
+        }
+
+        if(other.gameObject.CompareTag("DeathHeight"))
+        {
+            Debug.Log("OnTriggerEnter--isDeathHeight");
+            spawnPoint.toPreSpawnPoint();
         }
     }
 }

@@ -863,6 +863,7 @@
      <Compile Include="Assets\_Scripts\Object\Movement\WaypointProgressTracker.cs" />
      <Compile Include="Assets\_Scripts\Object\ShiningList.cs" />
      <Compile Include="Assets\_Scripts\Object\Twinkle.cs" />
+     <Compile Include="Assets\_Scripts\Player_Scripts\Achievement.cs" />
      <Compile Include="Assets\_Scripts\Player_Scripts\SwordHit.cs" />
      <Compile Include="Assets\_Scripts\SetBodyCollider.cs" />
      <Compile Include="Assets\_Scripts\SpawnPoint.cs" />
