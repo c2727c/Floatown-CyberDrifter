@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4cf8b6a89c5c25d48b907d13fcc4da42
+labels:
+- Effect
+- FX
+- Script
+- Shader
+- Utility
+timeCreated: 1492913380
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
