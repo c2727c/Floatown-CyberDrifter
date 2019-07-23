@@ -54,6 +54,44 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Mesh Explosion\Editor\MeshExploderEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiAboutWindow.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiAerodynamicConstraintsEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiBendTwistConstraintsEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiBendingConstraintsEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiBoneEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiClothParticleHandles.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiCollider2DEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiColliderEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiConstraintParametersDrawer.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiCurveEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiDistanceConstraintsEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiDistanceFieldEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiDraggableIcon.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiEditorCurveDrawing.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiEditorUtils.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiEmitterMaterialEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiParticleActorEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiParticleBakerEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiParticleCacheEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiParticleHandleEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiParticleRendererEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiPinConstraintsEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiRodEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiRopeChainRendererEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiRopeCursorEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiRopeEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiRopeExtrudedRendererEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiRopeLineRendererEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiRopeMeshRendererEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiRopeSectionEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiShapeMatchingConstraintsEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiSolverEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiSplineHandles.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiStitcherEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiStretchShearConstraintsEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiTetherConstraintsEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\ObiVolumeConstraintsEditor.cs" />
+     <Compile Include="Assets\Obi\Editor\PreviewHelpers.cs" />
      <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\AudioImportPostProcessor.cs" />
      <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\AudioManagerInspector.cs" />
      <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\MinMaxPropertyDrawer.cs" />
@@ -113,6 +151,13 @@
      <Compile Include="Assets\_MK\MKGlowFree\Editor\MKGlowEditor.cs" />
      <Compile Include="Assets\_MK\MKGlowFree\Editor\MinMaxRangeDrawer.cs" />
      <Compile Include="Assets\_MK\MKGlowFree\Editor\SelectiveStandardShaderGUI.cs" />
+     <None Include="Assets\Obi\Editor\Resources\EditorLineShader.shader" />
+     <None Include="Assets\Obi\Editor\Resources\PropertyGradientMaterial.shader" />
+     <None Include="Assets\Obi\Editor\Resources\EditorParticle.shader" />
+     <None Include="Assets\Obi\Editor\Resources\EditorParticleRadius.shader" />
+     <None Include="Assets\Obi\Editor\Resources\FlatSurfaceShader.shader" />
+     <None Include="Assets\Obi\Editor\Resources\DistanceFieldPreview.shader" />
+     <None Include="Assets\Obi\Editor\Resources\TopologyBorders.shader" />
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>C:/Users/t0918255/Desktop/Project/Test 2/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
@@ -717,6 +762,10 @@
     <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
       <Project>{3E2562A3-2D66-5664-6180-B1807811CC06}</Project>
       <Name>Assembly-CSharp-Editor-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="Obi.csproj">
+      <Project>{0E9FC66A-3D5F-D02E-2CE7-1C8FFEA5A94A}</Project>
+      <Name>Obi</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
       <Project>{90B0FB08-8E35-BCF8-50BE-F71969936EFA}</Project>

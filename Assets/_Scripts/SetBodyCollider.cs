@@ -7,18 +7,25 @@ public class SetBodyCollider : MonoBehaviour
     // Start is called before the first frame update
     Transform bodytrans;
     public float ypara = 0.4f;
+    bool flag = true;
     void Start()
     {
-        //bodytrans = transform.Find("[VRTK][AUTOGEN][BodyColliderContainer]");
-        //bodytrans.localScale = new Vector3(1.0f, ypara, 1.0f);
+        bodytrans = transform.Find("[VRTK][AUTOGEN][BodyColliderContainer]");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(flag){
         bodytrans = transform.Find("[VRTK][AUTOGEN][BodyColliderContainer]");
-        bodytrans.localScale = new Vector3(1.0f, ypara, 1.0f);
         bodytrans.gameObject.tag="Player";
+        flag = false;
+
+        }
+        
+        //bodytrans = transform.Find("[VRTK][AUTOGEN][BodyColliderContainer]");
+        
         
     }
 }

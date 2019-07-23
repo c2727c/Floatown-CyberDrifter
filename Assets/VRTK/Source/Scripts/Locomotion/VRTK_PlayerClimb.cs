@@ -82,6 +82,10 @@ namespace VRTK
         protected bool isClimbing;
         protected bool useGrabbedObjectRotation;
 
+        public GameObject music_player;
+        
+        public musicplay_controller mplayer;
+
         /// <summary>
         /// The IsClimbing method will return if climbing is currently taking place or not.
         /// </summary>
@@ -250,6 +254,10 @@ namespace VRTK
             bodyPhysics.ToggleOnGround(false);
 
             isClimbing = true;//isClimbing在这里置为真
+
+            music_player.GetComponent<musicplay_controller>().isClimbing = true;
+            mplayer.ClimbingMusicPlay();
+
             climbingObject = target;
             grabbingController = currentGrabbingController;
             startControllerScaledLocalPosition = GetScaledLocalPosition(grabbingController.transform);
@@ -269,6 +277,7 @@ namespace VRTK
             }
 
             isClimbing = false;
+            // music_player.GetComponent<musicplay_controller>().isClimbing = false;
             if (positionRewind != null && IsHeadsetColliding())
             {
                 positionRewind.RewindPosition();

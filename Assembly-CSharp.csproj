@@ -63,6 +63,39 @@
      <Compile Include="Assets\Mesh Explosion\Internal\Fade.cs" />
      <Compile Include="Assets\Mesh Explosion\Internal\MeshExplosion.cs" />
      <Compile Include="Assets\Mesh Explosion\MeshExploder.cs" />
+     <Compile Include="Assets\Obi\Rendering\ObiBaseFluidRenderer.cs" />
+     <Compile Include="Assets\Obi\Rendering\ObiDistanceFieldRenderer.cs" />
+     <Compile Include="Assets\Obi\Rendering\ObiInstancedParticleRenderer.cs" />
+     <Compile Include="Assets\Obi\Rendering\ObiParticleRenderer.cs" />
+     <Compile Include="Assets\Obi\Rendering\ObiRopeRenderers\ObiRopeChainRenderer.cs" />
+     <Compile Include="Assets\Obi\Rendering\ObiRopeRenderers\ObiRopeExtrudedRenderer.cs" />
+     <Compile Include="Assets\Obi\Rendering\ObiRopeRenderers\ObiRopeLineRenderer.cs" />
+     <Compile Include="Assets\Obi\Rendering\ObiRopeRenderers\ObiRopeMeshRenderer.cs" />
+     <Compile Include="Assets\Obi\Rendering\ObiRopeRenderers\ObiRopeRendererBase.cs" />
+     <Compile Include="Assets\Obi\Rendering\ShadowmapExposer.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\ActorSpawner.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\AddRandomVelocity.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\Blinker.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CharacterControl2D.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CharacterController\ObiCharacter.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CharacterController\ObiCharacterController.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\ColliderHighlighter.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CollisionEventHandler.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\ColorRandomizer.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CraneController.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\CursorController.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\DebugParticleFrames.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\GrapplingHook.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\Melt.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\ObiActorTeleport.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\ObiParticleCounter.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\ObjectDragger.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\ObjectLimit.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\RobotArmController.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\RuntimeRopeGenerator.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\RuntimeRopeGeneratorUse.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\SlowmoToggler.cs" />
+     <Compile Include="Assets\Obi\Sample Scenes\SampleResources\Scripts\SpiralCurve.cs" />
      <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
      <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
      <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />
@@ -870,9 +903,11 @@
      <Compile Include="Assets\_Scripts\TenAniController.cs" />
      <Compile Include="Assets\_Scripts\UtilFunc.cs" />
      <Compile Include="Assets\_Scripts\XRRigFloorOffset.cs" />
+     <Compile Include="Assets\musicplay_controller.cs" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\UI\UI-DefaultFont.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\UI\UI-Unlit-Detail.shader" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarMaterialStateShader.cginc" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\ParticleShader.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\UI\UI-Unlit-TextDetail.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\Effect\MKGlowSelectiveRender.shader" />
      <None Include="Assets\SSFS_v15\src\Resources\Shaders\cginc\prototypes.cginc" />
@@ -909,15 +944,19 @@
      <None Include="Assets\SSFS_v15\src\Resources\Shaders\cginc\calc.cginc" />
      <None Include="Assets\_Materials\Shaders\Gem.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\MKGlowStandardSpecular.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\DistanceFieldSlice.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\UI\UI-DefaultETC1.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\Effect\MKGlowSM40.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\ObiParticles.cginc" />
      <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\ToyCubeWithOutline.shader" />
      <None Include="Assets\Oculus\SampleFramework\Core\Locomotion\Materials\ColumnGlow.shader" />
      <None Include="Assets\SteamVR\readme.txt" />
      <None Include="Assets\SSFS_v15\src\Resources\Shaders\cginc\maths.cginc" />
+     <None Include="Assets\Obi\CHANGELOG_rope.txt" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\Expressive\Avatar_Mobile_CombinedMeshExpressive.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\Sprites\Sprites-Default.shader" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\StandardVertexColors.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Other\MK_Illumin-Diffuse.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Particle\MK_Particle AddMultiply.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\Inc\Downsample.hlsl" />
@@ -929,12 +968,14 @@
      <None Include="Assets\SSFS_v15\src\Resources\Shaders\SSFS_BasicHologram.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Cutout\MK_Cutout-DiffuseBumped.shader" />
      <None Include="Assets\SteamVR\InteractionSystem\Readme_InteractionSystem.txt" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\SimpleParticleShader.shader" />
      <None Include="Assets\Oculus\SampleFramework\Usage\Stereo180Video\Resources\Multiview Stereo.shader" />
      <None Include="Assets\Oculus\SampleFramework\Core\DebugUI\Fonts\Montserrat\OFL.txt" />
      <None Include="Assets\Oculus\Avatar\Samples\SocialStarter\README.txt" />
      <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Shaders\Hands_01.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\UI\UI-Lit-Refraction.shader" />
      <None Include="Assets\PolygonSciFiCity\_Shaders\UVScroll.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\ObiEllipsoids.cginc" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Sprites\Sprites-Diffuse.shader" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarPBRV2Simple.shader" />
      <None Include="Assets\VRTK\Documentation.txt" />
@@ -971,6 +1012,7 @@
      <None Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Shaders\TriPlanarWorld.shader" />
      <None Include="Assets\SSFS_v15\src\Resources\Shaders\cginc\vars.cginc" />
      <None Include="Assets\SSFS_v15\src\Resources\Shaders\SSFS.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\LitParticles.shader" />
      <None Include="Assets\Oculus\SampleFramework\Usage\Stereo180Video\Plugins\Android\Audio360\ThirdPartyNotices.txt" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\Inc\Upsample.hlsl" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Illumin\MK_Illumin-Glossy.shader" />
@@ -980,8 +1022,10 @@
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Particle\MK_Particle Multiply.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Particle\MK_Particle Alpha Blend.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Cutout\MK_Cutout-Glossy.shader" />
+     <None Include="Assets\Obi\Plugins\libOni.bundle\Contents\Resources\CMakeLists.txt" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\Inc\UI.hlsl" />
      <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
+     <None Include="Assets\Obi\Resources\ObiMaterials\ObiUtils.cginc" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Other\MK_Mobile-Diffuse.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\UI\UI-Default.shader" />
      <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Shaders\Hands_02.shader" />
@@ -1561,6 +1605,10 @@
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{3C063F64-F13D-97FA-A3B0-1D1DDA23196D}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="Obi.csproj">
+      <Project>{0E9FC66A-3D5F-D02E-2CE7-1C8FFEA5A94A}</Project>
+      <Name>Obi</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
       <Project>{90B0FB08-8E35-BCF8-50BE-F71969936EFA}</Project>

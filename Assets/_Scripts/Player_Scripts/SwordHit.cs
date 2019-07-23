@@ -5,8 +5,12 @@ using UnityEngine;
 public class SwordHit : MonoBehaviour//该脚本赋给玩家的剑
 {
     private AudioSource[] m_ArrayMusic;
+    private AudioSource[] m_ArrayMusic0;
     private AudioSource m_music1;
     private AudioSource m_music2;
+
+    public GameObject musicplayer;
+    private AudioSource m_music3;
     float energy = 0;
 
     public Transform stopT;
@@ -19,8 +23,10 @@ public class SwordHit : MonoBehaviour//该脚本赋给玩家的剑
     void Start()
     {
         m_ArrayMusic = GetComponents<AudioSource>();
+        m_ArrayMusic0 = musicplayer.GetComponents<AudioSource>();
         m_music1 = m_ArrayMusic[0];
-        m_music2 = m_ArrayMusic[1];
+        m_music2 = m_ArrayMusic0[0];
+        m_music3 = m_ArrayMusic0[1];
 
         preSpawnPosition = player.transform.position;
     }
@@ -49,6 +55,7 @@ public class SwordHit : MonoBehaviour//该脚本赋给玩家的剑
         }
         if(other.gameObject.CompareTag("PickUp"))//碰到能量盒
         {
+            m_music3.Play();
             Debug.Log("OnTriggerEnter--isPickUp");
             EnergyBox energyBox = other.gameObject.GetComponent<EnergyBox>();
             //光剑亮度增加

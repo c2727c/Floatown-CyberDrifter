@@ -48,7 +48,7 @@ MonoBehaviour:
     boolean: 1
     chance: 1
   allowIdleAnimation:
-    boolean: 0
+    boolean: 1
     chance: 1
   allowIdleNoise:
     boolean: 1
@@ -60,13 +60,13 @@ MonoBehaviour:
     def: 1
     test: 1
   idleIntensity:
-    useRandom: 0
+    useRandom: 1
     min: 0
     max: 0.75
     def: 0.50915754
     test: 1
   idleSpeed:
-    useRandom: 0
+    useRandom: 1
     min: 0.1
     max: 0.5
     def: 0.4871795
@@ -78,7 +78,7 @@ MonoBehaviour:
     boolean: 1
     chance: 0.2
   allowRadial:
-    boolean: 0
+    boolean: 1
     chance: 1
   phaseDirection:
     useRandom: 0
@@ -87,7 +87,7 @@ MonoBehaviour:
     def: 1
     test: 1
   separateTileCounts:
-    boolean: 0
+    boolean: 1
     chance: 0
   tileCountUniform:
     useRandom: 1
@@ -108,10 +108,10 @@ MonoBehaviour:
     def: 0
     test: 0
   separateAxisScaling:
-    boolean: 0
+    boolean: 1
     chance: 0.2
   allowTileCentricScaling:
-    boolean: 0
+    boolean: 1
     chance: 0
   scalingUniform:
     useRandom: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
     def: 26
     test: 26
   scattering:
-    useRandom: 0
+    useRandom: 1
     min: 0
     max: 1
     def: 0
@@ -147,16 +147,16 @@ MonoBehaviour:
     useRandom: 0
     min: 0.85824174
     max: 1
-    def: 0.44688645
+    def: 0.4632768
     test: 0
   aberration:
-    useRandom: 0
+    useRandom: 1
     min: 0
     max: 0.5989011
     def: 0
     test: 0
   effectAberration:
-    useRandom: 0
+    useRandom: 1
     min: 0
     max: 0.5
     def: 0

@@ -137,6 +137,7 @@ namespace VRTK
         protected Vector3 currentDirection;
         protected Vector3 previousDirection;
         protected bool movementEngaged;
+        public musicplay_controller mplayer;
 
         /// <summary>
         /// Set the control options and modify the trackables to match.
@@ -176,6 +177,7 @@ namespace VRTK
         {
             return currentSpeed;
         }
+
 
         protected virtual void Awake()
         {
@@ -252,16 +254,22 @@ namespace VRTK
                 currentDirection = SetDirection();
                 // Update our current speed.
                 currentSpeed = speed;
+
+                // player.GetComponent<musicplay_controller>().isWalking = true;
+                mplayer.WalkingMusicPlay();
             }
             else if (currentSpeed > 0f)
             {
                 currentSpeed -= (currentlyFalling ? fallingDeceleration : deceleration);
+                // player.GetComponent<musicplay_controller>().isWalking = true;
             }
             else
             {
                 currentSpeed = 0f;
                 currentDirection = Vector3.zero;
                 previousDirection = Vector3.zero;
+                // player.GetComponent<musicplay_controller>().isWalking = false;
+                // footstep.Stop();
             }
 
             SetDeltaTransformData();

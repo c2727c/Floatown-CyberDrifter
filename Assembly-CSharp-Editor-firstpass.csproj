@@ -656,6 +656,10 @@
       <Project>{3C063F64-F13D-97FA-A3B0-1D1DDA23196D}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
+    <ProjectReference Include="Obi.csproj">
+      <Project>{0E9FC66A-3D5F-D02E-2CE7-1C8FFEA5A94A}</Project>
+      <Name>Obi</Name>
+    </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
       <Project>{90B0FB08-8E35-BCF8-50BE-F71969936EFA}</Project>
       <Name>Oculus.VR.Editor</Name>

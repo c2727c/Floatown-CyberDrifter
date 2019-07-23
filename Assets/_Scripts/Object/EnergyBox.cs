@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnergyBox : MonoBehaviour
 {
-    AudioSource audio;
     public enum EnergyBoxType { Normal, Event };
     public EnergyBoxType type = EnergyBoxType.Normal;
     public float energy = 10.0f;
@@ -17,7 +16,7 @@ public class EnergyBox : MonoBehaviour
 
     void Start()
     {
-        audio = GetComponent<AudioSource>();//之前一直出问题居然……是因为没加音源而请求………………
+        // audio = GetComponent<AudioSource>();//之前一直出问题居然……是因为没加音源而请求………………
         if(type==EnergyBoxType.Event){
             Debug.Log("type==EnergyBoxType.Event!");
             mpEvent = GameObject.Find("Floating_Platform Variant").GetComponent<MovingPlatformEvents>();//没请求到音源…后面的就没有执行？
@@ -42,7 +41,6 @@ public class EnergyBox : MonoBehaviour
         }
         Debug.Log(" ExplodeDisappear!");
         transform.Find("Energy Box 01").gameObject.GetComponent<MeshExploder>().Explode();
-        audio.Play();
         GameObject.Destroy(gameObject);
     }
     public void LightUp(){
