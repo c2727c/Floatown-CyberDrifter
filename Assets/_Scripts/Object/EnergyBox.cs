@@ -9,11 +9,6 @@ public class EnergyBox : MonoBehaviour
     public EnergyBoxType type = EnergyBoxType.Normal;
     public float energy = 10.0f;
     // Start is called before the first frame update
-    public Transform stopTrans;
-
-
-
-
     MovingPlatformEvents mpEvent;
 
 
@@ -57,11 +52,6 @@ public class EnergyBox : MonoBehaviour
         Debug.Log("CallEvent!");
         //获取家长的Folating Platform
         //然后控制它开始运动
-        mpEvent.RunTo(stopTrans);
+        mpEvent.RunToTower();
     }
-
-    // void StartExplosion() {
-	// 	BroadcastMessage("Explode");
-	// 	GameObject.Destroy(gameObject);
-	// }
 }

@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fde0cf713a9bc448586163021d90d4, type: 3}
+  m_Name: My SSFS Generator_1
+  m_EditorClassIdentifier: 
+  textures:
+    list:
+    - {fileID: 2800000, guid: 31ebedb99e2257340a6075b8058dc964, type: 3}
+  scatters:
+    list:
+    - {fileID: 2800000, guid: f38442fedb9aaa44288533c4f5007565, type: 3}
+  baseTint:
+    useRandom: 1
+    minHue: 0
+    minSaturation: 0
+    minValue: 0.5070557
+    maxHue: 1
+    maxSaturation: 0.68428606
+    maxValue: 1
+    fixedColor: {r: 1, g: 0, b: 0, a: 1}
+    testcolor: {r: 0.27638406, g: 0.27628744, b: 0.2749217, a: 1}
+  transitionTint:
+    useRandom: 1
+    minHue: 0
+    minSaturation: 0
+    minValue: 0
+    maxHue: 1
+    maxSaturation: 1
+    maxValue: 1
+    fixedColor: {r: 0.26415092, g: 0, b: 0, a: 1}
+    testcolor: {r: 0.38465685, g: 0.030271143, b: 0.3036566, a: 1}
+  useTextureSwap:
+    boolean: 1
+    chance: 1
+  useImageAsScatter:
+    boolean: 1
+    chance: 1
+  useRandomTileCount:
+    boolean: 1
+    chance: 1
+  allowIdleAnimation:
+    boolean: 0
+    chance: 1
+  allowIdleNoise:
+    boolean: 1
+    chance: 0.2
+  idleNoiseStrength:
+    useRandom: 1
+    min: 0
+    max: 1
+    def: 1
+    test: 1
+  idleIntensity:
+    useRandom: 0
+    min: 0
+    max: 0.75
+    def: 0.50915754
+    test: 1
+  idleSpeed:
+    useRandom: 0
+    min: 0.1
+    max: 0.5
+    def: 0.4871795
+    test: 1
+  allowIdleReverse:
+    boolean: 1
+    chance: 0.3
+  allowTileClipping:
+    boolean: 1
+    chance: 0.2
+  allowRadial:
+    boolean: 0
+    chance: 1
+  phaseDirection:
+    useRandom: 0
+    min: 0
+    max: 1
+    def: 1
+    test: 1
+  separateTileCounts:
+    boolean: 0
+    chance: 0
+  tileCountUniform:
+    useRandom: 1
+    min: 10
+    max: 1000
+    def: 26
+    test: 26
+  tileCountX:
+    useRandom: 0
+    min: 7
+    max: 1000
+    def: 0
+    test: 0
+  tileCountY:
+    useRandom: 0
+    min: 7
+    max: 1000
+    def: 0
+    test: 0
+  separateAxisScaling:
+    boolean: 0
+    chance: 0.2
+  allowTileCentricScaling:
+    boolean: 0
+    chance: 0
+  scalingUniform:
+    useRandom: 0
+    min: 0
+    max: 1
+    def: 0
+    test: 26
+  scalingX:
+    useRandom: 1
+    min: 0
+    max: 1
+    def: 26
+    test: 26
+  scalingY:
+    useRandom: 1
+    min: 0
+    max: 1
+    def: 26
+    test: 26
+  scattering:
+    useRandom: 0
+    min: 0
+    max: 1
+    def: 0
+    test: 0
+  phaseSharpness:
+    useRandom: 0
+    min: 0.1
+    max: 1
+    def: 0.5641026
+    test: 0
+  overbright:
+    useRandom: 0
+    min: 0.85824174
+    max: 1
+    def: 0.44688645
+    test: 0
+  aberration:
+    useRandom: 0
+    min: 0
+    max: 0.5989011
+    def: 0
+    test: 0
+  effectAberration:
+    useRandom: 0
+    min: 0
+    max: 0.5
+    def: 0
+    test: 0
+  scanlineIntensity:
+    useRandom: 0
+    min: 0
+    max: 0.63003665
+    def: 0.52747256
+    test: 0
+  scanlineDistortion:
+    useRandom: 1
+    min: 0.13553114
+    max: 0.8058608
+    def: 0
+    test: 0
+  scanlineScale:
+    useRandom: 1
+    min: 0.5
+    max: 0.6520147
+    def: 0
+    test: 0
+  scanlineSpeed:
+    useRandom: 0
+    min: 0
+    max: 1
+    def: 0.5787546
+    test: 0
+  flash:
+    useRandom: 0
+    min: 0.60805863
+    max: 1
+    def: 1
+    test: 0
+  flicker:
+    useRandom: 1
+    min: 0
+    max: 1
+    def: 0
+    test: 0

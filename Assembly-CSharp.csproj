@@ -53,7 +53,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Achievement_merge.cs" />
      <Compile Include="Assets\BOX.cs" />
      <Compile Include="Assets\GravityCollider.cs" />
      <Compile Include="Assets\Interactable.cs" />
@@ -848,12 +847,13 @@
      <Compile Include="Assets\_MK\MKGlowFree\Scripts\Settings.cs" />
      <Compile Include="Assets\_Materials\gem\GemExample\Scripts\DemoTimeOfDay.cs" />
      <Compile Include="Assets\_Materials\gem\GemExample\Scripts\Orbit.cs" />
+     <Compile Include="Assets\_Scripts\Achievement_merge.cs" />
+     <Compile Include="Assets\_Scripts\Achievement_merge0.cs" />
      <Compile Include="Assets\_Scripts\Enemy_Scripts\Enemy.cs" />
      <Compile Include="Assets\_Scripts\Enemy_Scripts\EnemyBehavior.cs" />
      <Compile Include="Assets\_Scripts\Enemy_Scripts\PickUpItem.cs" />
      <Compile Include="Assets\_Scripts\Enemy_Scripts\PlayerControl.cs" />
      <Compile Include="Assets\_Scripts\Enemy_Scripts\TreasureBox.cs" />
-     <Compile Include="Assets\_Scripts\HealthSystem.cs" />
      <Compile Include="Assets\_Scripts\Object\EnergyBox.cs" />
      <Compile Include="Assets\_Scripts\Object\EventBox.cs" />
      <Compile Include="Assets\_Scripts\Object\FadeOut.cs" />
@@ -870,14 +870,6 @@
      <Compile Include="Assets\_Scripts\TenAniController.cs" />
      <Compile Include="Assets\_Scripts\UtilFunc.cs" />
      <Compile Include="Assets\_Scripts\XRRigFloorOffset.cs" />
-     <Compile Include="Assets\azure[Sky]v3\Scenes\Scenes Scripts\CameraRotation.cs" />
-     <Compile Include="Assets\azure[Sky]v3\Scenes\Scenes Scripts\FPSCounter.cs" />
-     <Compile Include="Assets\azure[Sky]v3\Scenes\Scenes Scripts\MoonShaderExempleScene.cs" />
-     <Compile Include="Assets\azure[Sky]v3\Scenes\Scenes Scripts\OutputDemo.cs" />
-     <Compile Include="Assets\azure[Sky]v3\Scenes\Scenes Scripts\UI_Controller.cs" />
-     <Compile Include="Assets\azure[Sky]v3\Scripts\AzureFog.cs" />
-     <Compile Include="Assets\azure[Sky]v3\Scripts\AzureSkyCloudAnimation.cs" />
-     <Compile Include="Assets\azure[Sky]v3\Scripts\AzureSky_Controller.cs" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\UI\UI-DefaultFont.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\UI\UI-Unlit-Detail.shader" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarMaterialStateShader.cginc" />
@@ -953,7 +945,6 @@
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Cutout\MK_Cutout-Diffuse.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\Inc\Copy.hlsl" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
-     <None Include="Assets\azure[Sky]v3\Shaders\azure[Moon].shader" />
      <None Include="Assets\Mesh Explosion\Read Me.txt" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Transparent\MK_Transparent-DiffuseBumpSpec.shader" />
      <None Include="Assets\SSFS_v15\src\Resources\Shaders\SSFSCG.cginc" />
@@ -972,10 +963,8 @@
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\UI\UI-Lit-Bumped.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\UI\UI-Unlit-Text.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\UI\UI-Lit-Detail.shader" />
-     <None Include="Assets\azure[Sky]v3\Shaders\azure[Fog].shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Transparent\MK_Transparent-Glossy.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Illumin\MK_Illumin-DiffuseBumpSpec.shader" />
-     <None Include="Assets\azure[Sky]v3\Shaders\azure[Sky]_ProceduralClouds.shader" />
      <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\UIOverlay.shader" />
      <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\TransparentFresnelBehind.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\Effect\MKGlowSM35.shader" />

@@ -29,7 +29,6 @@ MonoBehaviour:
     - {fileID: 2800000, guid: c1bf876283cb34944835601345f7b9fb, type: 3}
     - {fileID: 2800000, guid: 07daba39e71a01047a2c4bfcc6e6166e, type: 3}
     - {fileID: 2800000, guid: 43a3843e37893ba479bd476fbe476a30, type: 3}
-    - {fileID: 0}
   scatters:
     list:
     - {fileID: 2800000, guid: f38442fedb9aaa44288533c4f5007565, type: 3}

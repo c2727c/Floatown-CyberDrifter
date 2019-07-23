@@ -18,6 +18,7 @@ public class SetBodyCollider : MonoBehaviour
     {
         bodytrans = transform.Find("[VRTK][AUTOGEN][BodyColliderContainer]");
         bodytrans.localScale = new Vector3(1.0f, ypara, 1.0f);
+        bodytrans.gameObject.tag="Player";
         
     }
 }

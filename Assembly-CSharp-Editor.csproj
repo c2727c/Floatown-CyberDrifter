@@ -113,7 +113,6 @@
      <Compile Include="Assets\_MK\MKGlowFree\Editor\MKGlowEditor.cs" />
      <Compile Include="Assets\_MK\MKGlowFree\Editor\MinMaxRangeDrawer.cs" />
      <Compile Include="Assets\_MK\MKGlowFree\Editor\SelectiveStandardShaderGUI.cs" />
-     <Compile Include="Assets\azure[Sky]v3\Editor\AzureSky_ControllerEditor.cs" />
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>C:/Users/t0918255/Desktop/Project/Test 2/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>

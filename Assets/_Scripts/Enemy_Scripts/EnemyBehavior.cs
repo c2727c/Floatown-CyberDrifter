@@ -19,6 +19,9 @@ public class EnemyBehavior : MonoBehaviour
     // Use this for initialization
 
     public String tagName="Spot";
+    public static int killedNum=0;
+
+    public Achievement_merge0 achieve0;
 
 
 
@@ -50,6 +53,11 @@ public class EnemyBehavior : MonoBehaviour
         //初始化主角
         m_player = GameObject.FindGameObjectWithTag("Player");
         hurt_cnt = 0;
+
+        //找到成就脚本对象
+        achieve0 = GameObject.Find("AchievementSign_0").GetComponent<Achievement_merge0>();
+
+
 
 
 
@@ -191,6 +199,12 @@ public class EnemyBehavior : MonoBehaviour
             //Add Scores when enemy down
             Score.x += 2;
             // Score.text.text = "Current Score: " + Score.x;
+            killedNum++;
+            Debug.Log("killedNum:"+killedNum);
+            if(killedNum==1){
+                //播放成就2
+                achieve0.Show(transform);
+            }
         }
 
        

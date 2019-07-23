@@ -8,9 +8,11 @@ public class MovingPlatformEvents : MonoBehaviour
     WaypointProgressTracker wayTracker;
     VRTK_InteractableObject interactableObject;
     //public  Vector3 stopPoint;
-    public Transform stopTrans;
-    public Transform stopTrans2;
+    public Transform stopTrans;//公用的每次Stop按照它
+    public Transform stopT1;//只是记录下第一个停点
+    public Transform stopT2;//只是记录下第二个停点
     bool flag = true;
+    public AudioSource decendingAudio;
 
 
     // Start is called before the first frame update
@@ -28,8 +30,8 @@ public class MovingPlatformEvents : MonoBehaviour
     void Update()
     {
         Stop();
-        if(interactableObject.IsGrabbed()&&flag){
-            RunTo(stopTrans2);
+        if(interactableObject.IsGrabbed()&&flag){//方向盘被抓住后发生的事情
+            RunTo(stopT2);
             flag = false;
         }
         
@@ -44,6 +46,10 @@ public class MovingPlatformEvents : MonoBehaviour
     public void RunTo(Transform stopT){
         this.stopTrans = stopT;
         wayTracker.enabled = true;
+    }
+    public void RunToTower(){
+        RunTo(stopT1);
+        decendingAudio.Play();
     }
     public void Stop(){
         float delta = Vector3.Distance(transform.position, stopTrans.position);
