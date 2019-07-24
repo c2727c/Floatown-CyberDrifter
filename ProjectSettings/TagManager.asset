@@ -13,6 +13,7 @@ TagManager:
   - Mark
   - SpawnPoint
   - DeathHeight
+  - Spot3
   layers:
   - Default
   - TransparentFX

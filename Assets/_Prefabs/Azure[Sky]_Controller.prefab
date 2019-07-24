@@ -25,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102366}
-  m_LocalRotation: {x: 0, y: 0.05233596, z: 0, w: 0.9986295}
+  m_LocalRotation: {x: -0.015024087, y: 0.92316735, z: 0.03627137, w: 0.3823883}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -45,7 +45,7 @@ Light:
   serializedVersion: 9
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0.99982995
+  m_Intensity: 0.53027546
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -104,7 +104,7 @@ LensFlare:
   m_Enabled: 1
   m_Flare: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_Brightness: 0.05000007
+  m_Brightness: 0.025921205
   m_FadeSpeed: 3
   m_IgnoreLayers:
     serializedVersion: 2
@@ -303,7 +303,7 @@ MonoBehaviour:
   DAY_of_WEEK: 0
   NUMBER_of_DAYS: 1
   TIME_of_DAY: 6
-  TIME_of_DAY_by_CURVE: 6
+  TIME_of_DAY_by_CURVE: 5.7
   UTC: 0
   Longitude: 6
   DAY_CYCLE: 0
@@ -2961,14 +2961,14 @@ MonoBehaviour:
     m_RotationOrder: 4
   lambda: {x: 650, y: 570, z: 475}
   SkyLuminance: 1
-  SkyDarkness: 1.5
+  SkyDarkness: 2.7428787
   SunsetPower: 4.5875
   SunDiskSize: 250
   SunDiskIntensity: 3
   SunDiskPropagation: -1.5
   MoonSize: 5
   StarsIntensity: 10
-  StarsExtinction: 1.6297812
+  StarsExtinction: 1.6025
   MoonColorPower: 2
   MoonExtinction: 1
   MilkyWayIntensity: 0
@@ -11270,7 +11270,7 @@ MonoBehaviour:
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
   WispyCovarage: 0
-  WispyCloudPosition: -4.7565365
+  WispyCloudPosition: -4.7470965
   WispyCloudSpeed: 3
   WispyCloudDirection: 0
   WispyCovarageCurve:
@@ -13173,9 +13173,9 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  SunDirLightIntensity: 0.99982995
-  MoonDirLightIntensity: 0.040925622
-  SunFlareIntensity: 0.05000007
+  SunDirLightIntensity: 0.53027546
+  MoonDirLightIntensity: 0.39401186
+  SunFlareIntensity: 0.025921205
   SunDirLightIntensityCurve:
   - serializedVersion: 2
     m_Curve:
@@ -14974,7 +14974,7 @@ Light:
   serializedVersion: 9
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0.040925622
+  m_Intensity: 0.39401186
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

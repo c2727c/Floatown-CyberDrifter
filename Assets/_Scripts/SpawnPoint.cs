@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class SpawnPoint : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class SpawnPoint : MonoBehaviour
 
     private int prespawnIndex;
     private int postspawnIndex;
+
 
     void Awake()
     {
@@ -32,7 +35,7 @@ public class SpawnPoint : MonoBehaviour
         int i;
         for(i = 0; i < spawnLocations.Length; i++)
         {
-            if(spawnLocations[i].transform.position == swordHitScript.preSpawnPosition)
+            if(spawnLocations[i].transform.position == SwordHit.preSpawnPosition)
             {
                 prespawnIndex = i;
                 break;

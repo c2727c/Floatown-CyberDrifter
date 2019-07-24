@@ -17,7 +17,7 @@ public class SwordHit : MonoBehaviour//该脚本赋给玩家的剑
 
     public SpawnPoint spawnPoint;   //to invoke function from SpawnPoint script
     public GameObject player;   //to initialize the preSpawnPosition
-    public Vector3 preSpawnPosition;
+    public static Vector3 preSpawnPosition;
 
 
     void Start()

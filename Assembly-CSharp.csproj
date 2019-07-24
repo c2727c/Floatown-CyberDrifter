@@ -887,6 +887,7 @@
      <Compile Include="Assets\_Scripts\Enemy_Scripts\PickUpItem.cs" />
      <Compile Include="Assets\_Scripts\Enemy_Scripts\PlayerControl.cs" />
      <Compile Include="Assets\_Scripts\Enemy_Scripts\TreasureBox.cs" />
+     <Compile Include="Assets\_Scripts\MovingAway.cs" />
      <Compile Include="Assets\_Scripts\Object\EnergyBox.cs" />
      <Compile Include="Assets\_Scripts\Object\EventBox.cs" />
      <Compile Include="Assets\_Scripts\Object\FadeOut.cs" />
@@ -899,10 +900,20 @@
      <Compile Include="Assets\_Scripts\Player_Scripts\Achievement.cs" />
      <Compile Include="Assets\_Scripts\Player_Scripts\SwordHit.cs" />
      <Compile Include="Assets\_Scripts\SetBodyCollider.cs" />
+     <Compile Include="Assets\_Scripts\SingleSpawnPoint.cs" />
      <Compile Include="Assets\_Scripts\SpawnPoint.cs" />
+     <Compile Include="Assets\_Scripts\SpawnTrigger.cs" />
      <Compile Include="Assets\_Scripts\TenAniController.cs" />
      <Compile Include="Assets\_Scripts\UtilFunc.cs" />
      <Compile Include="Assets\_Scripts\XRRigFloorOffset.cs" />
+     <Compile Include="Assets\azure[Sky]v3\Scenes\Scenes Scripts\CameraRotation.cs" />
+     <Compile Include="Assets\azure[Sky]v3\Scenes\Scenes Scripts\FPSCounter.cs" />
+     <Compile Include="Assets\azure[Sky]v3\Scenes\Scenes Scripts\MoonShaderExempleScene.cs" />
+     <Compile Include="Assets\azure[Sky]v3\Scenes\Scenes Scripts\OutputDemo.cs" />
+     <Compile Include="Assets\azure[Sky]v3\Scenes\Scenes Scripts\UI_Controller.cs" />
+     <Compile Include="Assets\azure[Sky]v3\Scripts\AzureFog.cs" />
+     <Compile Include="Assets\azure[Sky]v3\Scripts\AzureSkyCloudAnimation.cs" />
+     <Compile Include="Assets\azure[Sky]v3\Scripts\AzureSky_Controller.cs" />
      <Compile Include="Assets\musicplay_controller.cs" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\UI\UI-DefaultFont.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\UI\UI-Unlit-Detail.shader" />
@@ -917,6 +928,7 @@
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\UI\UI-Default.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
      <None Include="Assets\_MK\MKGlowFree\Legacy_3_0_7\ReadMe.txt" />
+     <None Include="Assets\azure[Sky]v3\Shaders\azure[Sky]_PreRenderedClouds.shader" />
      <None Include="Assets\SSFS_v15\src\Resources\Shaders\cginc\sampling.cginc" />
      <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\CrosshairZCheat.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Transparent\MK_Transparent-DiffuseBumped.shader" />
@@ -952,7 +964,6 @@
      <None Include="Assets\Oculus\SampleFramework\Core\Locomotion\Materials\ColumnGlow.shader" />
      <None Include="Assets\SteamVR\readme.txt" />
      <None Include="Assets\SSFS_v15\src\Resources\Shaders\cginc\maths.cginc" />
-     <None Include="Assets\Obi\CHANGELOG_rope.txt" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\Expressive\Avatar_Mobile_CombinedMeshExpressive.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\Sprites\Sprites-Default.shader" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
@@ -986,6 +997,7 @@
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Cutout\MK_Cutout-Diffuse.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\Inc\Copy.hlsl" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
+     <None Include="Assets\azure[Sky]v3\Shaders\azure[Moon].shader" />
      <None Include="Assets\Mesh Explosion\Read Me.txt" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Transparent\MK_Transparent-DiffuseBumpSpec.shader" />
      <None Include="Assets\SSFS_v15\src\Resources\Shaders\SSFSCG.cginc" />
@@ -1004,13 +1016,16 @@
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\UI\UI-Lit-Bumped.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\UI\UI-Unlit-Text.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsLuminance\UI\UI-Lit-Detail.shader" />
+     <None Include="Assets\azure[Sky]v3\Shaders\azure[Fog].shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Transparent\MK_Transparent-Glossy.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Illumin\MK_Illumin-DiffuseBumpSpec.shader" />
+     <None Include="Assets\azure[Sky]v3\Shaders\azure[Sky]_ProceduralClouds.shader" />
      <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\UIOverlay.shader" />
      <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\TransparentFresnelBehind.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\Effect\MKGlowSM35.shader" />
      <None Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Shaders\TriPlanarWorld.shader" />
      <None Include="Assets\SSFS_v15\src\Resources\Shaders\cginc\vars.cginc" />
+     <None Include="Assets\azure[Sky]v3\Shaders\azure[Sky]_NoClouds.shader" />
      <None Include="Assets\SSFS_v15\src\Resources\Shaders\SSFS.shader" />
      <None Include="Assets\Obi\Resources\ObiMaterials\LitParticles.shader" />
      <None Include="Assets\Oculus\SampleFramework\Usage\Stereo180Video\Plugins\Android\Audio360\ThirdPartyNotices.txt" />
@@ -1022,7 +1037,6 @@
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Particle\MK_Particle Multiply.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Particle\MK_Particle Alpha Blend.shader" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\Cutout\MK_Cutout-Glossy.shader" />
-     <None Include="Assets\Obi\Plugins\libOni.bundle\Contents\Resources\CMakeLists.txt" />
      <None Include="Assets\_MK\MKGlowFree\Shaders\Inc\UI.hlsl" />
      <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
      <None Include="Assets\Obi\Resources\ObiMaterials\ObiUtils.cginc" />

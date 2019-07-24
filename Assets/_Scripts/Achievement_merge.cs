@@ -16,10 +16,13 @@ public class Achievement_merge : MonoBehaviour
     //public VRTK_BodyPhysics bodyPhysics;
     public VRTK_PlayerClimb playerClimb;
     private bool triggerEntered = false;
+    Transform playerTrans;
+    public AudioSource AchievementAudio;            
     protected virtual void Awake()
         {
             //bodyPhysics = (bodyPhysics != null ? bodyPhysics : FindObjectOfType<VRTK_BodyPhysics>());
             playerClimb = (playerClimb != null ? playerClimb : FindObjectOfType<VRTK_PlayerClimb>());
+            playerTrans = GameObject.Find("CenterEyeAnchor").transform;
         }
     void Start()
     {
@@ -39,6 +42,10 @@ public class Achievement_merge : MonoBehaviour
             frameSpan--;
         }else if(frameSpan ==0){
             frameSpan--;
+            //调整位置
+            transform.position =playerTrans.position+playerTrans.forward*3+ Vector3.up*1.2f;
+            transform.rotation = Quaternion.LookRotation(transform.position-playerTrans.position);
+            //然后显示
             //置标志脚本的Boolean为true
             SSFSToggle.phaseOn = true;
             //播放标志出现音乐

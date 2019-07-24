@@ -9,6 +9,8 @@ public class EnergyBox : MonoBehaviour
     public float energy = 10.0f;
     // Start is called before the first frame update
     MovingPlatformEvents mpEvent;
+    public int id = 0;
+    public MovingAway platform2;
 
 
 
@@ -37,7 +39,12 @@ public class EnergyBox : MonoBehaviour
     public void ExplodeDisappear(){
         if(type==EnergyBoxType.Event){//之前一直出问题居然……是因为没加音源而请求………………
         Debug.Log(" ExplodeDisappear:Event!");
-        CallEvent();
+        if(id==2){
+            Debug.Log("id==2");
+            CallEvent2();
+        }else{
+            CallEvent();
+        }
         }
         Debug.Log(" ExplodeDisappear!");
         transform.Find("Energy Box 01").gameObject.GetComponent<MeshExploder>().Explode();
@@ -51,5 +58,9 @@ public class EnergyBox : MonoBehaviour
         //获取家长的Folating Platform
         //然后控制它开始运动
         mpEvent.RunToTower();
+    }
+    public void CallEvent2(){
+        Debug.Log("CallEvent2!");
+        platform2.MoveAway();
     }
 }
