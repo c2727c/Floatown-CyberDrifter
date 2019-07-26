@@ -18,6 +18,11 @@ public class musicplay_controller : MonoBehaviour
         music2 = m_MusicArray[1];
         music3 = m_MusicArray[2];
         music4 = m_MusicArray[3];
+        int length = m_MusicArray.Length;
+        for(int i=0;i<length&&i!=1;++i){
+            m_MusicArray[i].enabled = false;
+
+        }
     }
 
     // Update is called once per frame
@@ -36,11 +41,22 @@ public class musicplay_controller : MonoBehaviour
 
     public void WalkingMusicPlay()
     {
+        m_MusicArray[2].enabled = true;
         music3.Play();
     }
 
     public void ClimbingMusicPlay()
     {
+        m_MusicArray[3].enabled = true;
         music4.Play();
+    }
+    // public void BackgroundMusicPlay_0(){
+    //     m_MusicArray[4].enabled = true;
+    //     m_MusicArray[4].Play();
+    // }
+    public void BoxHitMusicPlay()
+    {
+        m_MusicArray[1].enabled = true;
+        music2.Play();
     }
 }

@@ -17,7 +17,9 @@ public class Achievement_merge : MonoBehaviour
     public VRTK_PlayerClimb playerClimb;
     private bool triggerEntered = false;
     Transform playerTrans;
-    public AudioSource AchievementAudio;            
+    public AudioSource achiAudio;
+    public int frameDelay = 90;
+
     protected virtual void Awake()
         {
             //bodyPhysics = (bodyPhysics != null ? bodyPhysics : FindObjectOfType<VRTK_BodyPhysics>());
@@ -26,6 +28,7 @@ public class Achievement_merge : MonoBehaviour
         }
     void Start()
     {
+        achiAudio = GameObject.Find("AchievementMusic").GetComponent<AudioSource>();
         SSFSToggle = gameObject.GetComponent<SimpleSSFSToggle>();
         SSFSToggle.phaseOn = false;
         audio.enabled=false;
@@ -43,11 +46,12 @@ public class Achievement_merge : MonoBehaviour
         }else if(frameSpan ==0){
             frameSpan--;
             //调整位置
-            transform.position =playerTrans.position+playerTrans.forward*3+ Vector3.up*1.2f;
+            transform.position =playerTrans.position+playerTrans.forward*3+ Vector3.up*2.0f;
             transform.rotation = Quaternion.LookRotation(transform.position-playerTrans.position);
             //然后显示
             //置标志脚本的Boolean为true
             SSFSToggle.phaseOn = true;
+            achiAudio.Play();
             //播放标志出现音乐
         }
     }
@@ -62,7 +66,7 @@ public class Achievement_merge : MonoBehaviour
                 //播放情节背景音乐
                 audio.enabled=true;
                 audio.Play();
-                frameSpan = 90;//约1.5秒后出现标志
+                frameSpan =frameDelay;//约1.5秒后出现标志
             }
             
         }

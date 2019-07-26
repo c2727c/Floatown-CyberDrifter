@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3823005091422934086}
   - component: {fileID: 3823005091422934087}
   - component: {fileID: 3823005091422934080}
-  - component: {fileID: 1276378672353764490}
   m_Layer: 0
   m_Name: spawnPoint
   m_TagString: SpawnPoint
@@ -124,15 +123,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotation: {x: 0, y: -30, z: 0}
---- !u!114 &1276378672353764490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3823005091423032035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66833c53a1af30d44a8940d246edf861, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

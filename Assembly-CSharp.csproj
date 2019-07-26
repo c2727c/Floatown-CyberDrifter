@@ -887,6 +887,8 @@
      <Compile Include="Assets\_Scripts\Enemy_Scripts\PickUpItem.cs" />
      <Compile Include="Assets\_Scripts\Enemy_Scripts\PlayerControl.cs" />
      <Compile Include="Assets\_Scripts\Enemy_Scripts\TreasureBox.cs" />
+     <Compile Include="Assets\_Scripts\Exit.cs" />
+     <Compile Include="Assets\_Scripts\MarkerTriggerEvent.cs" />
      <Compile Include="Assets\_Scripts\MovingAway.cs" />
      <Compile Include="Assets\_Scripts\Object\EnergyBox.cs" />
      <Compile Include="Assets\_Scripts\Object\EventBox.cs" />
@@ -900,10 +902,11 @@
      <Compile Include="Assets\_Scripts\Player_Scripts\Achievement.cs" />
      <Compile Include="Assets\_Scripts\Player_Scripts\SwordHit.cs" />
      <Compile Include="Assets\_Scripts\SetBodyCollider.cs" />
-     <Compile Include="Assets\_Scripts\SingleSpawnPoint.cs" />
      <Compile Include="Assets\_Scripts\SpawnPoint.cs" />
      <Compile Include="Assets\_Scripts\SpawnTrigger.cs" />
      <Compile Include="Assets\_Scripts\TenAniController.cs" />
+     <Compile Include="Assets\_Scripts\TriggerToPlayMusic.cs" />
+     <Compile Include="Assets\_Scripts\TriggerToStopMusic.cs" />
      <Compile Include="Assets\_Scripts\UtilFunc.cs" />
      <Compile Include="Assets\_Scripts\XRRigFloorOffset.cs" />
      <Compile Include="Assets\azure[Sky]v3\Scenes\Scenes Scripts\CameraRotation.cs" />

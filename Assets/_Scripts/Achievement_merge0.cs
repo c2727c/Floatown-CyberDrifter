@@ -51,6 +51,7 @@ public class Achievement_merge0 : MonoBehaviour//该脚本赋给标志对象，�
         //然后显示
         SSFSToggle.phaseOn = true;
         //播放音乐
+        firstBloodAudio.enabled = true;
         firstBloodAudio.Play();
     }
 

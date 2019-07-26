@@ -15,11 +15,6 @@ public class SwordHit : MonoBehaviour//该脚本赋给玩家的剑
 
     public Transform stopT;
 
-    public SpawnPoint spawnPoint;   //to invoke function from SpawnPoint script
-    public GameObject player;   //to initialize the preSpawnPosition
-    public static Vector3 preSpawnPosition;
-
-
     void Start()
     {
         m_ArrayMusic = GetComponents<AudioSource>();
@@ -28,7 +23,6 @@ public class SwordHit : MonoBehaviour//该脚本赋给玩家的剑
         m_music2 = m_ArrayMusic0[0];
         m_music3 = m_ArrayMusic0[1];
 
-        preSpawnPosition = player.transform.position;
     }
     void Update()
     {
@@ -55,7 +49,8 @@ public class SwordHit : MonoBehaviour//该脚本赋给玩家的剑
         }
         if(other.gameObject.CompareTag("PickUp"))//碰到能量盒
         {
-            m_music3.Play();
+            // m_music3.Play();
+            musicplayer.GetComponent<musicplay_controller>().BoxHitMusicPlay();
             Debug.Log("OnTriggerEnter--isPickUp");
             EnergyBox energyBox = other.gameObject.GetComponent<EnergyBox>();
             //光剑亮度增加
@@ -74,19 +69,19 @@ public class SwordHit : MonoBehaviour//该脚本赋给玩家的剑
 
         }
 
-        if(other.gameObject.CompareTag("SpawnPoint"))
-        {
-            Debug.Log("OnTriggerEnter--isSpawnPoint");
-            other.gameObject.SetActive(false);
-            //更新preSpawnPosition
-            preSpawnPosition = other.gameObject.transform.position;
-            Debug.Log("The spawn position is " + preSpawnPosition);
-        }
+        // if(other.gameObject.CompareTag("SpawnPoint"))
+        // {
+        //     Debug.Log("OnTriggerEnter--isSpawnPoint");
+        //     other.gameObject.SetActive(false);
+        //     //更新preSpawnPosition
+        //     preSpawnPosition = other.gameObject.transform.position;
+        //     Debug.Log("The spawn position is " + preSpawnPosition);
+        // }
 
-        if(other.gameObject.CompareTag("DeathHeight"))
-        {
-            Debug.Log("OnTriggerEnter--isDeathHeight");
-            spawnPoint.toPreSpawnPoint();
-        }
+        // if(other.gameObject.CompareTag("DeathHeight"))
+        // {
+        //     Debug.Log("OnTriggerEnter--isDeathHeight");
+        //     spawnPoint.toPreSpawnPoint();
+        // }
     }
 }

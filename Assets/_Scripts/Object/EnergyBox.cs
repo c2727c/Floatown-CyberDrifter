@@ -62,5 +62,7 @@ public class EnergyBox : MonoBehaviour
     public void CallEvent2(){
         Debug.Log("CallEvent2!");
         platform2.MoveAway();
+        //召唤最终成就并延迟显示
+        
     }
 }
